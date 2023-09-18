@@ -15,7 +15,7 @@
 
 
 # A hacky way to implement reverse linked list behavior
-
+# Use @register_passable("trivial") because Pointer[].load() and .store() somehow don't work with in-memory struct
 @register_passable("trivial")
 struct ListNode:
     # var val: Int
